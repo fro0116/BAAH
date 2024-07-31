@@ -5,6 +5,7 @@ class TaskName(Enum):
     """
     配置文件里的task任务名称
     """
+    RESTART_GAME = "RestartGame"
     LOGIN_GAME = "登录游戏"
     MOMOTALK = "清momotalk"
     CAFE = "咖啡馆"
