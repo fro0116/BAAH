@@ -56,6 +56,7 @@ def connect_to_device(use_config=None):
     if use_config:
         subprocess_run([get_config_adb_path(use_config), "connect", getNewestSeialNumber(use_config)])
     else:
+        print("get_config_adb_path()", get_config_adb_path(), " getNewestSeialNumber()" ,  getNewestSeialNumber())
         subprocess_run([get_config_adb_path(), "connect", getNewestSeialNumber()])
 
 
@@ -249,6 +250,22 @@ def get_dpi(use_config=None):
     # only focus on last line (Physical density, Override density)
     dpires = subprocess_run([get_config_adb_path(use_config), "-s", getNewestSeialNumber(use_config), "shell", "wm", "density"]).stdout.strip().split("\n")[-1]
     return dpires
+    
+def close_app(activity_path: str):
+    """
+    close app
+    """
+    appname = activity_path.split("/")[0]
+    subprocess_run([get_config_adb_path(), "-s", getNewestSeialNumber(), 'shell', 'am', 'force-stop', appname], isasync=True)
+    time.sleep(1)
+
+def go_home(activity_path: str):
+    """
+    go home
+    """
+    appname = activity_path.split("/")[0]
+    subprocess_run([get_config_adb_path(), "-s", getNewestSeialNumber(), 'input', 'keyevent', 'KEYCODE_HOME'], isasync=True)
+    time.sleep(1)
 
 def set_dpi(target_dpi, use_config=None):
     """

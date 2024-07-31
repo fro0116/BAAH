@@ -11,6 +11,8 @@ class TaskName():
     """
     配置文件里的task任务名称，此类下的属性可作为task标识符
     """
+    RESTART_GAME = "RestartGame"
+    GO_HOME = "GoHome"
     LOGIN_GAME = "登录游戏"
     MOMOTALK = "清momotalk"
     CAFE = "咖啡馆"
@@ -66,8 +68,19 @@ class TaskInstanceMap:
     """
     def __init__(self):
         self.taskmap = {
-            TaskName.LOGIN_GAME:  
-                TaskInstance(
+            TaskName.RESTART_GAME: TaskInstance(
+                    task_config_name = TaskName.RESTART_GAME,
+                    i18n_key_name = "task_restart_game",
+                    task_module = RestartGame,
+                    task_params = {}
+                ),
+            TaskName.GO_HOME: TaskInstance(
+                    task_config_name = TaskName.GO_HOME,
+                    i18n_key_name = "task_go_home",
+                    task_module = GoHome,
+                    task_params = {}
+                ),
+            TaskName.LOGIN_GAME: TaskInstance(
                     task_config_name = TaskName.LOGIN_GAME,
                     i18n_key_name = "task_login_game",
                     task_module = Task, # !EnterGame任务现在被config直接控制并添加在taskpool开头，忽略配置文件里的登录游戏任务，为了防止后面解析任务列表实例时缺少key导致exception，这里以空module Task代替
