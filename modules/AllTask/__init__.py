@@ -1,5 +1,7 @@
 from .Task import Task
 
+from .RestartGame.RestartGame import RestartGame
+from .GoHome.GoHome import GoHome
 from .EnterGame.EnterGame import EnterGame
 from .InMomotalk.InMomotalk import InMomotalk
 from .InCafe.InCafe import InCafe
