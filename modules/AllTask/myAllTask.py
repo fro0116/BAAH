@@ -11,6 +11,8 @@ class TaskName():
     """
     配置文件里的task任务名称，此类下的属性可作为task标识符
     """
+    RESTART_GAME = "RESTART_GAME",
+    GO_HOME = "GO_HOME",
     LOGIN_GAME = "登录游戏"
     MOMOTALK = "清momotalk"
     CAFE = "咖啡馆"

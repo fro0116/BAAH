@@ -208,6 +208,14 @@ def get_dpi(use_config=None):
         use_config = config
     dpires = subprocess_run([get_config_adb_path(use_config), "-s", getNewestSeialNumber(use_config), "shell", "wm", "density"]).stdout
     return dpires
+    
+def close_app(activity_path: str):
+    """
+    close app
+    """
+    appname = activity_path.split("/")[0]
+    subprocess_run([get_config_adb_path(), "-s", getNewestSeialNumber(), 'shell', 'am', 'force-stop', appname], isasync=True)
+    time.sleep(1)
 
 def set_dpi(target_dpi, use_config=None):
     """
