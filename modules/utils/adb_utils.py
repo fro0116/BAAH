@@ -182,6 +182,14 @@ def open_app(activity_path: str):
     appname = activity_path.split("/")[0]
     subprocess_run([get_config_adb_path(), "-s", getNewestSeialNumber(), 'shell', 'monkey', '-p', appname, '1'], isasync=True)
 
+def close_app(activity_path: str):
+    """
+    close app
+    """
+    appname = activity_path.split("/")[0]
+    subprocess_run([get_config_adb_path(), "-s", getNewestSeialNumber(), 'shell', 'am', 'force-stop', appname], isasync=True)
+    time.sleep(1)
+
 # NO_NEED = "NO_NEED"
 # ERROR = "ERROR"
 # FAILED = "FAILED"

@@ -1,5 +1,6 @@
 {
     "task_login_game":"登录游戏",
+    "task_restart_game":"RestartGame",
     "task_clear_momotalk":"清momotalk",
     "task_cafe":"咖啡馆",
     "task_cafe_deprecated":"咖啡馆只摸头(已废弃)",
