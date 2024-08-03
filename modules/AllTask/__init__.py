@@ -1,5 +1,6 @@
 from .Task import Task
 
+from .EnterGame.RestartGame import RestartGame
 from .EnterGame.EnterGame import EnterGame
 from .InMomotalk.InMomotalk import InMomotalk
 from .InCafe.InCafe import InCafe

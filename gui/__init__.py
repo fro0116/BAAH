@@ -38,6 +38,7 @@ def show_GUI(load_jsonname, config, shared_softwareconfig):
 
     # myAllTask里面的key与GUI显示的key的映射
     real_taskname_to_show_taskname = {
+        "RestartGame":config.get_text("task_restart_game"),
         "登录游戏":config.get_text("task_login_game"),
         "清momotalk":config.get_text("task_clear_momotalk"),
         "咖啡馆":config.get_text("task_cafe"),
