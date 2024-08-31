@@ -176,6 +176,9 @@ cython_debug/
 .vscode/
 
 # ignore all config files, except example.json
-BAAH_CONFIGS/
-!BAAH_CONFIGS/example.json
+# BAAH_CONFIGS/
+# !BAAH_CONFIGS/example.json
+# !BAAH_CONFIGS/daily.json
+# !BAAH_CONFIGS/frequent.json
 .nicegui
+
