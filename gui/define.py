@@ -22,6 +22,7 @@ class TaskStr:
 
 
 CURR_TASK_LIST: list[TaskStr] = [
+    TaskStr(TaskName.RESTART_GAME, "task_restart_game"),
     TaskStr(TaskName.LOGIN_GAME, "task_login_game"),
     TaskStr(TaskName.MOMOTALK, "task_clear_momotalk"),
     TaskStr(TaskName.CAFE, "task_cafe"),

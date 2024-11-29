@@ -11,6 +11,7 @@ from common import TaskName
 
 # 用户config里的 任务名称 和 任务类 的对应关系
 task_dict = {
+    TaskName.RESTART_GAME.value: [RestartGame, {}],
     TaskName.LOGIN_GAME.value: [EnterGame, {}],
     TaskName.MOMOTALK.value: [InMomotalk, {}],
     TaskName.CAFE.value: [InCafe, {}],
