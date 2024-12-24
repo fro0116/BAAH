@@ -62,6 +62,20 @@ class TaskInstanceMap:
     """
     def __init__(self):
         self.taskmap = {
+            TaskName.RESTART_GAME:  
+                TaskInstance(
+                    task_config_name = TaskName.RESTART_GAME,
+                    i18n_key_name = "task_restart_game",
+                    task_module = EnterGame,
+                    task_params = {}
+                ),
+            TaskName.GO_HOME:  
+                TaskInstance(
+                    task_config_name = TaskName.GO_HOME,
+                    i18n_key_name = "task_go_home",
+                    task_module = EnterGame,
+                    task_params = {}
+                ),
             TaskName.LOGIN_GAME:  
                 TaskInstance(
                     task_config_name = TaskName.LOGIN_GAME,
