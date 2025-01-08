@@ -125,9 +125,11 @@ def get_now_running_app(use_config=None):
     获取当前运行的app的前台activity
     """
     if use_config:
-        output = subprocess_run([get_config_adb_path(use_config), "-s", getNewestSeialNumber(use_config), 'shell', 'dumpsys', 'window']).stdout
+        output = subprocess_run([get_config_adb_path(use_config), "-s", getNewestSeialNumber(use_config), 'shell', 'dumpsys', 'activity', 'activities']).stdout
+        # output = subprocess_run([get_config_adb_path(use_config), "-s", getNewestSeialNumber(use_config), 'shell', 'dumpsys', 'window']).stdout
     else:
-        output = subprocess_run([get_config_adb_path(), "-s", getNewestSeialNumber(), 'shell', 'dumpsys', 'window']).stdout
+        output = subprocess_run([get_config_adb_path(), "-s", getNewestSeialNumber(), 'shell', 'dumpsys', 'activity', 'activities']).stdout
+        # output = subprocess_run([get_config_adb_path(), "-s", getNewestSeialNumber(), 'shell', 'dumpsys', 'window']).stdout
     # adb shell "dumpsys window | grep mCurrentFocus"
     # 有时候启动器排前，应用排后，这里逆序排序
     for sentence in output.split("\n")[::-1]:
