@@ -1,0 +1,1 @@
+uv run main.py frequent.json

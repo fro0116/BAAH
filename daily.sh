@@ -1,0 +1,1 @@
+uv run main.py daily.json
