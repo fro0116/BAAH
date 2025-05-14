@@ -2,6 +2,8 @@
     "config_file":"配置文件",
 
     "task_login_game":"登录游戏",
+    "task_restart_game":"RestartGame",
+    "task_go_home":"GoHome",
     "task_clear_momotalk":"清momotalk",
     "task_cafe":"咖啡馆",
     "task_cafe_deprecated":"咖啡馆(旧,不推荐)",
