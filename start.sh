@@ -1,0 +1,1 @@
+uv run jsoneditor.py --no-show --port=20014
