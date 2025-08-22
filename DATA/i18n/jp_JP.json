@@ -2,6 +2,8 @@
     "config_file":"設定ファイル",
 
     "task_login_game": "ゲームにログインする",
+    "task_restart_game":"RestartGame",
+    "task_go_home":"GoHome",
     "task_clear_momotalk": "モモトークをクリアする",
     "task_cafe": "カフェ",
     "task_cafe_deprecated": "カフェ（非推奨）",

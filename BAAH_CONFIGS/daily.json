@@ -1,0 +1,384 @@
+{
+    "SERVER_TYPE": "JP",
+    "TIMETABLE_TASK": [],
+    "WANTED_HIGHEST_LEVEL": [
+        [
+            [
+                1,
+                10,
+                2,
+                true
+            ],
+            [
+                2,
+                10,
+                2,
+                true
+            ],
+            [
+                3,
+                10,
+                2,
+                true
+            ]
+        ]
+    ],
+    "SPECIAL_HIGHTEST_LEVEL": [
+        [
+            [
+                1,
+                14,
+                1,
+                true
+            ]
+        ]
+    ],
+    "EXCHANGE_HIGHEST_LEVEL": [
+        [
+            [
+                1,
+                4,
+                2,
+                true
+            ],
+            [
+                2,
+                4,
+                2,
+                true
+            ],
+            [
+                3,
+                4,
+                2,
+                true
+            ]
+        ]
+    ],
+    "EVENT_QUEST_LEVEL": [
+        [
+            [
+                10,
+                -1,
+                true
+            ]
+        ],
+        [
+            [
+                11,
+                -1,
+                true
+            ]
+        ],
+        [
+            [
+                12,
+                -1,
+                true
+            ]
+        ]
+    ],
+    "HARD": [
+        [
+            [
+                22,
+                3,
+                -1,
+                true
+            ]
+        ]
+    ],
+    "NORMAL": [],
+    "TASK_ORDER": [
+        "登录游戏",
+        "RestartGame",
+        "制造",
+        "RestartGame",
+        "悬赏通缉",
+        "RestartGame",
+        "战术大赛",
+        "战术大赛",
+        "战术大赛",
+        "RestartGame",
+        "战术大赛",
+        "战术大赛",
+        "RestartGame",
+        "邮件",
+        "社团",
+        "商店",
+        "特殊任务",
+        "RestartGame",
+        "咖啡馆",
+        "课程表",
+        "每日任务",
+        "困难关卡",
+        "RestartGame",
+        "学园交流会",
+        "活动关卡",
+        "RestartGame",
+        "总力战",
+        "每日任务",
+        "RestartGame",
+        "清momotalk",
+        "GoHome"
+    ],
+    "SHOP_NORMAL": [
+        [
+            [
+                1,
+                true
+            ],
+            [
+                2,
+                true
+            ],
+            [
+                3,
+                true
+            ],
+            [
+                4,
+                true
+            ]
+        ],
+        [
+            [
+                1,
+                true
+            ],
+            [
+                2,
+                true
+            ],
+            [
+                3,
+                true
+            ],
+            [
+                4,
+                true
+            ]
+        ],
+        [
+            [
+                1,
+                false
+            ],
+            [
+                2,
+                false
+            ],
+            [
+                3,
+                false
+            ],
+            [
+                4,
+                false
+            ]
+        ]
+    ],
+    "SHOP_CONTEST": [
+        [],
+        [
+            [
+                3,
+                true
+            ],
+            [
+                4,
+                true
+            ]
+        ]
+    ],
+    "PUSH_NORMAL_USE_SIMPLE": true,
+    "PUSH_NORMAL_QUEST": 0,
+    "PUSH_NORMAL_QUEST_LEVEL": 1,
+    "PUSH_HARD_USE_SIMPLE": true,
+    "PUSH_HARD_QUEST": 0,
+    "PUSH_HARD_QUEST_LEVEL": 1,
+    "TASK_ACTIVATE": [
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true
+    ],
+    "TARGET_EMULATOR_PATH": "/opt/homebrew/bin/scrcpy -s R92X708AKVD --turn-screen-off --no-audio --stay-awake",
+    "CLOSE_EMULATOR_BAAH": true,
+    "PIC_PATH": "./DATA/assets_jp",
+    "GRID_SOL_PATH": "./DATA/grid_solution",
+    "FANHEXIE": false,
+    "ACTIVITY_PATH": "com.YostarJP.BlueArchive/com.yostarjp.bluearchive.MxUnityPlayerActivity",
+    "NEXT_CONFIG": "",
+    "ADB_PATH": "adb",
+    "SCREENSHOT_NAME": "79ca4059.png",
+    "TARGET_IP_PATH": "127.0.0.1",
+    "TARGET_PORT": 5555,
+    "KILL_PORT_IF_EXIST": false,
+    "TIME_AFTER_CLICK": 0.7,
+    "RESPOND_Y": 40,
+    "SHOP_NORMAL_REFRESH_TIME": 0,
+    "SHOP_NORMAL_SWITCH": true,
+    "SHOP_CONTEST_REFRESH_TIME": 0,
+    "SHOP_CONTEST_SWITCH": true,
+    "LOCK_SERVER_TO_RESPOND_Y": true,
+    "CAFE_CAMERA_FULL": true,
+    "AUTO_EVENT_STORY_PUSH": false,
+    "EXPLORE_RAINBOW_TEAMS": false,
+    "ENABLE_MAIL_NOTI": false,
+    "CAFE_TOUCH_WAY_DIFF": false,
+    "USE_VPN": false,
+    "VPN_CONFIG": {
+        "VPN_ACTIVITY": "com.github.kr328.clash/com.github.kr328.clash.MainActivity",
+        "CLICK_AND_WAIT_LIST": [
+            [
+                [
+                    622,
+                    248
+                ],
+                2
+            ]
+        ]
+    },
+    "AUTO_PUSH_EVENT_QUEST": false,
+    "CAFE_COLLECT": true,
+    "CAFE_TOUCH": true,
+    "CAFE_INVITE": true,
+    "RAISE_ERROR_IF_CANNOT_PUSH_EVENT_QUEST": true,
+    "MAIL_USER": "",
+    "MAIL_PASS": "",
+    "ADVANCED_EMAIL": false,
+    "SENDER_EMAIL": "",
+    "RECEIVER_EMAIL": "",
+    "MAIL_HOST": "",
+    "AUTO_ASSAULT_LEVEL": 4,
+    "RUN_UNTIL_TRY_TIMES": 6,
+    "RUN_UNTIL_WAIT_TIME": 1.5,
+    "ADB_DIRECT_USE_SERIAL_NUMBER": true,
+    "ADB_SEIAL_NUMBER": "R92X708AKVD",
+    "IS_AUTO_ASSAULT_STUDENT_HELP": false,
+    "AUTO_ASSAULT_HELP_STUDENT_IS_SUPPORT": false,
+    "AUTO_ASSAULT_HELP_STUDENT": "",
+    "ENABLE_HTTP_NOTI": false,
+    "TARGET_HTTP_URL": "",
+    "TARGET_HTTP_TOKEN": "",
+    "USE_MEMORY_IMAGE": false,
+    "SMART_TIMETABLE": true,
+    "TIMETABLE_WEIGHT_OF_REWARD": 10,
+    "TIMETABLE_WEIGHT_OF_HEART": 20,
+    "TIMETABLE_WEIGHT_OF_LOCK": 10,
+    "BUY_AP_MAX_PRICE": 30,
+    "BUY_AP_ADD_TIMES": 0,
+    "PRE_COMMAND": "scrcpy -s R92X708AKVD --turn-screen-off --no-audio --stay-awake",
+    "POST_COMMAND": "adb -s R92X708AKVD shell input keyevent KEYCODE_HOME",
+    "USER_DEF_TASKS": "",
+    "CRAFT_TIMES": 1,
+    "SPEICAL_EVENT_STATUS": false,
+    "NORMAL_QUEST_EVENT_STATUS": false,
+    "HARD_QUEST_EVENT_STATUS": false,
+    "EXCHANGE_EVENT_STATUS": false,
+    "CLOSE_EMULATOR_FINISH": true,
+    "CLOSE_BAAH_FINISH": true,
+    "CONTEST_LEVEL_PRIORITY": 10,
+    "CONTEST_RANK_PRIORITY": 10,
+    "CLOSE_GAME_FINISH": false,
+    "GAME_LOGIN_TIMEOUT": 600,
+    "MAX_RESTART_EMULATOR_TIMES": 0,
+    "SCREENSHOT_METHOD": "pipe",
+    "OPEN_GAME_APP_TASK": true,
+    "DO_POST_ALL_TASK": true,
+    "TEAM_SET_STRENGTH": [
+        {
+            "red": 10,
+            "blue": 10,
+            "yellow": 10,
+            "purple": 10
+        },
+        {
+            "red": 10,
+            "blue": 10,
+            "yellow": 10,
+            "purple": 10
+        },
+        {
+            "red": 10,
+            "blue": 10,
+            "yellow": 10,
+            "purple": 10
+        },
+        {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "purple": 0
+        }
+    ],
+    "CAFE1_INVITE_SEQ": 1,
+    "CAFE2_INVITE_SEQ": 2,
+    "SAVE_LOG_TO_FILE": false,
+    "CAFE_INVITE_SAME_NAME_DELAY": true,
+    "CRAFT_USE_QUICK": false,
+    "SHOP_NORMAL_BUYALL": false,
+    "SHOP_CONTEST_BUYALL": false,
+    "CAFE_INVITE_SAME_NAME_DELAY_REVERSE": false,
+    "ONE_CLICK_RAID": [],
+    "IS_AUTO_ASSAULT_AUTO_TEAM": false,
+    "ACTIVITY_AUTO_TEAM": false,
+    "EXPLORE_AUTO_TEAM": false,
+    "DO_ONE_CLICK_RAID_ONLY_DURING_EVENT": false,
+    "DO_ONE_CLICK_RAID_ONLY_DURING_NORMAL_TRIPLE": false,
+    "DO_ONE_CLICK_RAID_ONLY_DURING_HARD_TRIPLE": false,
+    "USER_STORAGE_FILE_NAME": "79ca4059.json",
+    "EXAM_TARGET_LEVEL": 2,
+    "EXAM_TEAM_COUNT": 3,
+    "UPDATE_API_URL": "https://baah.02000721.xyz/apk/jp",
+    "CLOSE_EMULATOR_ERROR": false,
+    "CLOSE_GAME_ERROR": false,
+    "CLOSE_BAAH_ERROR": false,
+    "CLOSE_VPN": false,
+    "VPN_CLOSE_CONFIG": {
+        "VPN_ACTIVITY": "com.github.kr328.clash/com.github.kr328.clash.MainActivity",
+        "CLICK_AND_WAIT_LIST": [
+            [
+                [
+                    622,
+                    248
+                ],
+                2
+            ]
+        ]
+    },
+    "ARIA2_PATH": "./tools/aria2/aria2c.exe",
+    "ARIA2_THREADS": 16,
+    "ARIA2_MAX_TRIES": 5,
+    "ARIA2_FAILURED_WAIT_TIME": 0.5,
+    "BIG_UPDATE": false,
+    "BIG_UPDATE_TYPE": "API"
+}

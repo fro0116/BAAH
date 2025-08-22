@@ -28,7 +28,8 @@ web_url = {
 # 使用url
 how_to_use_url = {
     "zh_CN": "https://gitee.com/sammusen/BAAH/blob/main/docs/README_cn.md",
-    "en_US": "https://github.com/sanmusen214/BAAH/blob/main/docs/README_en.md"
+    "en_US": "https://github.com/sanmusen214/BAAH/blob/main/docs/README_en.md",
+    "jp_JP": "https://github.com/sanmusen214/BAAH/blob/main/docs/README_en.md"
     }
 
 @ui.refreshable

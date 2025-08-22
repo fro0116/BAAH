@@ -56,6 +56,7 @@ def connect_to_device(use_config=None):
     if use_config:
         subprocess_run([get_config_adb_path(use_config), "connect", getNewestSeialNumber(use_config)])
     else:
+        print("get_config_adb_path()", get_config_adb_path(), " getNewestSeialNumber()" ,  getNewestSeialNumber())
         subprocess_run([get_config_adb_path(), "connect", getNewestSeialNumber()])
 
 
@@ -124,9 +125,11 @@ def get_now_running_app(use_config=None):
     获取当前运行的app的前台activity
     """
     if use_config:
-        output = subprocess_run([get_config_adb_path(use_config), "-s", getNewestSeialNumber(use_config), 'shell', 'dumpsys', 'window']).stdout
+        output = subprocess_run([get_config_adb_path(use_config), "-s", getNewestSeialNumber(use_config), 'shell', 'dumpsys', 'activity', 'activities']).stdout
+        # output = subprocess_run([get_config_adb_path(use_config), "-s", getNewestSeialNumber(use_config), 'shell', 'dumpsys', 'window']).stdout
     else:
-        output = subprocess_run([get_config_adb_path(), "-s", getNewestSeialNumber(), 'shell', 'dumpsys', 'window']).stdout
+        output = subprocess_run([get_config_adb_path(), "-s", getNewestSeialNumber(), 'shell', 'dumpsys', 'activity', 'activities']).stdout
+        # output = subprocess_run([get_config_adb_path(), "-s", getNewestSeialNumber(), 'shell', 'dumpsys', 'window']).stdout
     # adb shell "dumpsys window | grep mCurrentFocus"
     # 有时候启动器排前，应用排后，这里逆序排序
     for sentence in output.split("\n")[::-1]:
@@ -249,6 +252,22 @@ def get_dpi(use_config=None):
     # only focus on last line (Physical density, Override density)
     dpires = subprocess_run([get_config_adb_path(use_config), "-s", getNewestSeialNumber(use_config), "shell", "wm", "density"]).stdout.strip().split("\n")[-1]
     return dpires
+    
+def close_app(activity_path: str):
+    """
+    close app
+    """
+    appname = activity_path.split("/")[0]
+    subprocess_run([get_config_adb_path(), "-s", getNewestSeialNumber(), 'shell', 'am', 'force-stop', appname], isasync=True)
+    time.sleep(1)
+
+def go_home(activity_path: str):
+    """
+    go home
+    """
+    appname = activity_path.split("/")[0]
+    subprocess_run([get_config_adb_path(), "-s", getNewestSeialNumber(), 'input', 'keyevent', 'KEYCODE_HOME'], isasync=True)
+    time.sleep(1)
 
 def set_dpi(target_dpi, use_config=None):
     """

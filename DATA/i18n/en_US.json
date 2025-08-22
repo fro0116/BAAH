@@ -2,6 +2,8 @@
     "config_file":"Config File",
 
     "task_login_game": "Login Game",
+    "task_restart_game":"RestartGame",
+    "task_go_home":"GoHome",
     "task_clear_momotalk": "Clear Momotalk",
     "task_cafe": "Cafe",
     "task_cafe_deprecated":"Cafe (Deprecated one, not recommended)",
